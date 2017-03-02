@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta carset="UTF-8">
+	<title>Person-klassen</title>
+</head>
+<body>
+</body>
+	<script>
+		class Person{
+			constructor(forname, surname, born, gender){
+				this.forname = forname;
+				this.surname = surname;
+				this.born = born;
+				this.gender = gender;
+			}
+			
+			welcome(){
+				document.write("Welcome " + this.forname + "<br>");
+			}
+			
+			showPerson(){
+				document.write("This is " + this.forname + " " + this.surname + "a " + this.gender + ", born in " + this.born)
+			}
+		}
+		
+		let peterj = new Person("Peter", "Johnsen", 1998, "Male");
+		
+		var name = peterj.forname + " " + peterj.surname;
+		
+		document.write(name);
+
+	</script>
+</html>
